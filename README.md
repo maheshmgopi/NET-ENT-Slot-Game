@@ -3,17 +3,17 @@
 
 This is a slot game developed with vanilla JavaScript.
 
-# Features!
+### Features!
   - Sound effects for the spinning and big win.
   - There is a bonus round generated randomly for the user.
 
-# Browusers Tested
+### Browusers Tested
 Chrome, IE, Firefox
 
-# Tech
+### Tech
 JavaScript, Express
 
-# Run
+### Run
  - Clone the project or download the project as zip file.
  - run the command npm install 
  - run the command npm start
