@@ -82,7 +82,7 @@
         /** the results are processed and shown */
         function displayResult() {
             var counts = {};
-            console.log(resultArray);
+           
             resultArray.forEach(function (x) {
                 counts[x] = (counts[x] || 0) + 1;
             });

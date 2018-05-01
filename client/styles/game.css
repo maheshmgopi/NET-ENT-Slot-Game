@@ -12,6 +12,9 @@ html{
     height: 240px;
     position: relative;
     opacity: 0;
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
     transition: opacity 1s ease;
     max-width: 770px;
     margin: 0 auto;
@@ -33,19 +36,27 @@ box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.75);
     width: 33.3333%;
     position: relative;
 }
-.slot-wheel img{
+.slot-wheel img{   
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+
     position: absolute;
     opacity: 0;
     top: -100%;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+     -ms-transform: translateX(-50%);
+         transform: translateX(-50%);
     max-width: 100%;
 }
 .slot-wheel img.current{
     opacity: 1;
     top: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+     -ms-transform: translate(-50%,-50%);
+         transform: translate(-50%,-50%);
 }
 .slot-wheel img.exit{
     top: 100%;
@@ -103,13 +114,15 @@ font-weight: bold;
 
 @keyframes slideInDown {
     from {
-      transform: translate3d(0, -100%, 0);
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
       visibility: visible;
     
     }
   
     to {
-      transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
      
     }
   }
@@ -119,7 +132,8 @@ font-weight: bold;
   @keyframes zoomIn {
     from {
       opacity: 0;
-      transform: scale3d(0.3, 0.3, 0.3);
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+         transform: scale3d(0.3, 0.3, 0.3);
     }
   
     50% {

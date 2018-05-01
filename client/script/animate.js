@@ -46,7 +46,7 @@
 
                
                 if (_this.stopIndex !== '000' && (_this.stopIndex == destIndex)) {
-                    console.log(_this.stopIndex, destIndex);
+                   
                     _this.stopIndex = '000';
                     stopSpin(_this.timer, _this.callBack);
                 }
