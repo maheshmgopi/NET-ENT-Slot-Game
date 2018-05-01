@@ -1,0 +1,129 @@
+html{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.game{
+    text-align: center;
+
+}
+.fruits-container{
+    overflow: hidden;
+    height: 240px;
+    position: relative;
+    opacity: 0;
+    transition: opacity 1s ease;
+    max-width: 770px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 5px solid brown;
+    width: 90%;
+    -webkit-box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.75);
+}
+.fruits-container.open{
+    opacity: 1;
+}
+.slot-wheel{
+    height: 15rem;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    width: 33.3333%;
+    position: relative;
+}
+.slot-wheel img{
+    transition: all .2s ease-in-out;
+    position: absolute;
+    opacity: 0;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+}
+.slot-wheel img.current{
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.slot-wheel img.exit{
+    top: 100%;
+    opacity: 0;
+}
+.slot-wheel img.next{
+    top: -100%;
+    opacity: 0;
+}
+.play-button{
+    margin-top: 30px;
+    background: none;
+    border: none;
+    outline: none;
+}
+.play-button:hover, .play-button:active, .play-button:focus{
+    background: none;
+    border: none;
+    outline: none;
+}
+.play-button[disabled]{
+    opacity: .5;
+}
+.message-container{
+    height: 50px;
+}
+.message{
+opacity: 0;
+font-size:35px;
+
+text-shadow: 0px 1px #000;
+font-weight: bold;
+}
+.message.active{
+    animation: slideInDown .5s ease;
+    opacity: 1;
+}
+.message.bonus{
+    animation: zoomIn .5s ease;
+    opacity: 1;
+}
+.message.big-win{
+    color: green;
+}
+.message.small-win{
+    color: yellow;
+}
+.message.no-win{
+    color: red;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes slideInDown {
+    from {
+      transform: translate3d(0, -100%, 0);
+      visibility: visible;
+    
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+     
+    }
+  }
+  
+
+
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  

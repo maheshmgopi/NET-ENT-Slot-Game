@@ -1,0 +1,14 @@
+{
+  "name": "netentslotgame",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "author": "maheshmgopi@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "random-int": "^1.0.0"
+  }
+}

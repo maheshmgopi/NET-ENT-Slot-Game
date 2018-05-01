@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NET | ENT Slot Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/game.css" />
+
+</head>
+
+<body>
+    <div class="game">
+        <div class="message-container">
+            <div class="message"></div>
+        </div>
+        <div class="fruits-container">
+            <div class="slot-wheel" wheel-index="1">
+                <img src="images/Symbol_0.png" data-index="0" alt="Symbol1">
+                <img src="images/Symbol_1.png" data-index="1" alt="Symbol2">
+                <img src="images/Symbol_2.png" data-index="2" alt="Symbol3">
+                <img src="images/Symbol_3.png" data-index="3" alt="Symbol4">
+                <img src="images/Symbol_4.png" data-index="4" alt="Symbol5">
+                <img src="images/Symbol_5.png" data-index="5" alt="Symbol6">
+            </div>
+            <div class="slot-wheel" wheel-index="2">
+                <img src="images/Symbol_0.png" data-index="0" alt="Symbol1">
+                <img src="images/Symbol_1.png" data-index="1" alt="Symbol2">
+                <img src="images/Symbol_2.png" data-index="2" alt="Symbol3">
+                <img src="images/Symbol_3.png" data-index="3" alt="Symbol4">
+                <img src="images/Symbol_4.png" data-index="4" alt="Symbol5">
+                <img src="images/Symbol_5.png" data-index="5" alt="Symbol6">
+            </div>
+            <div class="slot-wheel" wheel-index="3">
+                <img src="images/Symbol_0.png" data-index="0" alt="Symbol1">
+                <img src="images/Symbol_1.png" data-index="1" alt="Symbol2">
+                <img src="images/Symbol_2.png" data-index="2" alt="Symbol3">
+                <img src="images/Symbol_3.png" data-index="3" alt="Symbol4">
+                <img src="images/Symbol_4.png" data-index="4" alt="Symbol5">
+                <img src="images/Symbol_5.png" data-index="5" alt="Symbol6">
+            </div>
+        </div>
+        <button class="play-button">
+            <img src='images/button.png'>
+        </button>
+    </div>
+    <div class="audio-section hide">
+        <audio controls class="big-win-audio">
+
+            <source src="audio/big-win.mp3" type="audio/mpeg">
+
+        </audio>
+        <audio controls class="spin-audio">
+
+            <source src="audio/wheel-rotate.mp3" type="audio/mpeg">
+
+        </audio>
+    </div>
+
+    <script type="text/javascript" src="script/util.js"></script>
+    <script type="text/javascript" src="script/service.js"></script>
+    <script type="text/javascript" src="script/app.js"></script>
+    <script type="text/javascript" src="script/animate.js"></script>
+</body>
+
+</html>
